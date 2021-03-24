@@ -35,6 +35,13 @@ add to tomcat-users
 <role rolename="manager-script"/>
 <role rolename="admin-gui"/>
 <user username="tomcat" password="tomcat" roles="manager-script, admin-gui"/>
+
+///
+tmp solution for jenkins connect tomcat
+fix /home/elena.razgulayeva/tomcat_dev/webapps/manager/META-INF/context.xml
+<!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+write external IP in the field fot tomcat url in jenkins
+///
 10)Restart tomcat
 cd ..
 cd bin
